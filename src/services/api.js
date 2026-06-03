@@ -36,3 +36,21 @@ export const getMovieReviews = async (id) => {
   const res = await fetch(`${BASE_URL}/movie/${id}/reviews?api_key=${API_KEY}`);
   return res.json();
 };
+
+
+export const getMovieVideos = async (id) => {
+  const res = await fetch(
+    `${BASE_URL}/movie/${id}/videos?api_key=${API_KEY}`
+  );
+
+  return res.json();
+};
+
+
+export const getSimilarMovies = async (id) => {
+  const res = await fetch(
+    `${BASE_URL}/movie/${id}/similar?api_key=${API_KEY}`
+  );
+  const data = await res.json();
+  return data.results;
+};
