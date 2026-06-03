@@ -1,4 +1,4 @@
-import "./css/App.css";
+import "./CSS/App.css";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
 import MovieDetails from "./pages/MovieDetails";
